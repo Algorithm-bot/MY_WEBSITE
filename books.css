@@ -1,0 +1,132 @@
+html,body {
+  width: 100%;
+  margin: 0px;
+  height: 100%;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style the navigation bar */
+.nav {
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  padding: 20px 20px;
+  display: -moz-grid-line;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+  font-size: 25px;
+}
+
+.nav a:hover {
+  color: #ff6600; /* Change color on hover */
+}
+
+/* Add styles for an active link */
+.active {
+  background-color: #ff6600;
+}
+
+
+
+
+/*editing images */
+.upper-image-container{
+  margin-top:20px;
+  margin-bottom: 10px;
+  display:block;
+}
+
+.bottom-image-container{
+  margin-top:100px;
+  margin-bottom: 20px;
+  display:block;
+}
+
+
+
+/*hovering the books*/
+
+.upper-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.upper-image-container img {
+  transition: transform 0.3s ease;
+
+}
+
+.upper-image-container img:hover {
+  transform: scale(1.1);
+}
+
+
+.bottom-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom-image-container img {
+  transition: transform 0.3s ease;
+
+}
+
+.bottom-image-container img:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav a {
+    margin: 6px;
+    font-size: 15px;
+  }
+
+  .upper-image-container {
+    height: auto; /* Adjust the height to fit content */
+    overflow-y: auto; /* This will enable vertical scrolling */
+  }
+
+  .upper-image-container img {
+    display: block;
+    margin-bottom: 10px; /* Add some spacing between images */
+    width: 100%; /* Ensure images take full width of container */
+  }
+
+
+  .bottom-image-container {
+    height: auto; /* Adjust the height to fit content */
+    overflow-y: auto; /* This will enable vertical scrolling */
+  }
+
+  .bottom-image-container img {
+    display: block;
+    margin-bottom: 10px; /* Add some spacing between images */
+    width: 100%; /* Ensure images take full width of container */
+  }
+}
+

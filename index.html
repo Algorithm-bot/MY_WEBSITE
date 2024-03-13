@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA notes</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="about.html" onclick="goAbout()">About</a>
+        <a href="#" onclick="goNotes()">Notes</a>
+        <a href="books.html" onclick="loadEbooks()">Ebooks</a>
+        <a href="#" onclick="loadRescources()">Rescources</a>
+    </div>
+
+    <!-- Square Widget -->
+    <div class="center-container" id="widget-container">
+
+        <div class="year-widget" id="year1" onclick="loadSemesters(1)">1st year</div>
+        <div class="year-widget" id="year2" onclick="loadSemesters(2)">2nd year</div>
+        <div class="year-widget" id="year3" onclick="loadSemesters(3)">3rd year</div>
+
+
+
+        <a href="sem_1_notes.html">
+        <div id="semester1" class="semester-widget">
+            Semester 1
+        </div>
+        </a>
+
+        <div id="semester2" class="semester-widget" onclick="sem_2_Subjects()"> <!-- Added onclick event -->
+            Semester 2
+        </div>
+
+        
+            <div id="semester3" class="semester-widget" onclick="sem_3_Subjects()">
+                Semester 3
+            </div>
+        
+
+        
+            <div id="semester4" class="semester-widget" onclick="sem_4_Subjects()">
+                Semester 4
+            </div>
+        
+
+        <div id="semester5" class="semester-widget">
+            Semester 5
+        </div>
+
+        <div id="semester6" class="semester-widget">
+            Semester 6
+        </div>
+
+    </div>
+
+
+<!-- Subject Widgets for Semester 2 -->
+<div class="center-container" id="sem2-container">
+
+    <a href="CN_notes.html">
+    <div class="sem-2-subject-widget" id="subject1" style="display: none;"> <!-- Initially hidden -->
+        Computer Network
+    </div>
+    </a>
+
+    <a href="EVS_notes.html">
+    <div class="sem-2-subject-widget" id="subject2" style="display: none;"> <!-- Initially hidden -->
+        Enviornmental Studies
+    </div>
+    </a>
+
+    <a href="DSA_notes.html">
+    <div class="sem-2-subject-widget" id="subject3" style="display: none;"> <!-- Initially hidden -->
+     Data  Structure  &   Algorithms
+    </div>
+    </a>
+</div>
+
+<!-- Subject Widgets for Semester 3 -->
+<div class="center-container" id="sem3-container" style="display: none;">
+
+    
+        <div class="sem-3-subject-widget" id="subject4">
+            Subject 1 for Semester 3
+        </div>
+    
+
+    <a href="sem_3_notes.html">
+        <div class="sem-3-subject-widget" id="subject5">
+            Subject 2 for Semester 3
+        </div>
+    </a>
+
+    <a href="sem_3_notes.html">
+        <div class="sem-3-subject-widget" id="subject6">
+            Subject 3 for Semester 3
+        </div>
+    </a>
+</div>
+
+
+
+<!--Subject Widgets for semester 4-->
+<div class="center-container" id="sem4-container" style="display: none;">
+
+
+<div class="sem-4-subject-widget" id="subject8">
+    Comouter architecture
+</div>
+
+<div class="sem-4-subject-widget" id="subject9">
+    software
+</div>
+
+<div class="sem-4-subject-widget" id="subject10">
+    finance
+</div>
+
+<div class="sem-4-subject-widget" id="subject11">
+    java
+</div>
+
+</div>
+
+</body>
+</html>
